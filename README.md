@@ -10,7 +10,7 @@ It is expected that the runtime application will ask the user to enter the name 
 
 ## Functional requirements
 
-El lenguaje de programación a utilizar para el curso es C# que hace parte el Entorno de Desarrollo Integrado IDE Visual Studio Community 2019, el cual se descarga directamente de la página oficial de [Visual Studio](https://visualstudio.microsoft.com/es/) 
+The programming language to use for the course is C #, which is part of the Integrated Development Environment IDE Visual Studio Community 2019, which can be downloaded directly from the official website of [Visual Studio](https://visualstudio.microsoft.com/es/) 
 
 When executing the application, it will show on the screen as initial information the full name of the student, the name of the application, the name of the course and will ask to enter the generic access password that will be: 123, as a basic security level, in such a way that if If the correct password is entered, it will take you to another screen or interface to enter the student's data in the simulator and display the result on the screen.
 
