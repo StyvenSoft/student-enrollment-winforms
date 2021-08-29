@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnEnter = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Información inicial de la aplicación";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(108, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Nombre del Curso:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(214, 96);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Estructura de Datos";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -73,7 +93,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(257, 20);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Simulador matricula estudiante";
+            this.label4.Text = "Simulador matrícula estudiante";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
@@ -96,26 +116,6 @@
             this.label1.Text = "Hugo Steveen Echeverri Silva";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Nombre del Curso:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(214, 96);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Estructura de Datos";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -125,30 +125,31 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Ingresar Contraseña:";
             // 
-            // textBox1
+            // txtPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(274, 245);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtPassword.Location = new System.Drawing.Point(274, 245);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(186, 20);
+            this.txtPassword.TabIndex = 6;
             // 
-            // button1
+            // btnEnter
             // 
-            this.button1.Location = new System.Drawing.Point(274, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEnter.Location = new System.Drawing.Point(274, 292);
+            this.btnEnter.Name = "btnEnter";
+            this.btnEnter.Size = new System.Drawing.Size(131, 23);
+            this.btnEnter.TabIndex = 7;
+            this.btnEnter.Text = "Ingresar";
+            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnEnter);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -171,8 +172,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnEnter;
     }
 }
 
