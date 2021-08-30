@@ -25,5 +25,12 @@ namespace student_enrollment_winforms
 
             this.label8.Text = theEnrollment.CalculateEnrollment(stratum, credits).ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 registrationSimulator = new Form2();
+            registrationSimulator.Show();
+            this.Close();
+        }
     }
 }

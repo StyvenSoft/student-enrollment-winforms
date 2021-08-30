@@ -22,6 +22,23 @@ namespace student_enrollment_winforms
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
+            if(txtName.Text == "" || txtStratum.Text == "" || txtCredits.Text == "")
+            {
+                errorNull.SetError(txtName, "Debe ingresar un nombre de estudiante");
+                errorNull.SetError(txtStratum, "Debe ingresar el estrato");
+                errorNull.SetError(txtCredits, "Debe ingresar un número de creditos");
+                return;
+            }
+            int Stratum;
+            int Credits;
+
+            if (!int.TryParse(txtStratum.Text, out Stratum) || !int.TryParse(txtCredits.Text, out Credits))
+            {
+                errorNull.SetError(txtStratum, "Debe ingresar un número de estrato");
+                errorNull.SetError(txtCredits, "Debe ingresar un número de creditos");
+                return;
+            }
+
             theStudent.Name = txtName.Text;
             theStudent.Stratum = Convert.ToInt32(txtStratum.Text);
             theStudent.Credits = Convert.ToInt32(txtCredits.Text);
