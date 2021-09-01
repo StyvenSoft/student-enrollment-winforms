@@ -24,6 +24,11 @@ namespace student_enrollment_winforms
             this.label3.Text = Convert.ToString(credits);
 
             this.label8.Text = theEnrollment.CalculateEnrollment(stratum, credits).ToString();
+
+            if (stratum == 1)
+            {
+                this.label9.Text = "Descuento del 50% aplicado";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
